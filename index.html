@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="empty-left">
+            
+        </div>
+        <div class="title-list ">
+            <h2>To Do List</h2>
+            <div class="input-group mb-3 btn-input">
+                <input type="text" class="form-control text-input" id="inputwork" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary ms-2" onclick="addTask()" type="button" id="button-addon2">Agregar</button>
+                <button class="btn1 btn-outline-secondary ms-2" type="button" id="button-addon2" onclick="callApi()">Llamar</button>
+                <br>
+            </div>
+            <div class="work-container" id="listwork">
+                <div class="work"><span class="material-icons md-48"></span>
+                    
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="empty-right">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

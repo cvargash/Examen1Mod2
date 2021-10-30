@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBFBFB;
+    width: 80%;
+    height:90%;
+    -webkit-box-shadow: 1px 2px 15px 0px #000000; 
+    box-shadow: 1px 2px 15px 0px #000000;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: 
+    "empty-left title-list empty-right"
+    "empty-left title-list empty-right"
+    "empty-left title-list empty-right";
+}
+
+.empty-left{
+    grid-area: empty-left;
+    
+}
+.title-list{
+    grid-area: title-list;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-list > h2{
+    margin-top: 15%;
+    
+}
+.empty-right{
+    grid-area: empty-right;
+    border-radius: 15px;
+    
+}
+.work-container{
+    margin-top: 8%;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.work-container::-webkit-scrollbar{
+    width: 15px;
+    background: #efefef;
+}
+.work-container::-webkit-scrollbar-thumb{
+    background:#958585;
+    border-radius: 5px;
+}
+.work{
+    background-color:#216FB7;
+    width: 400px;
+    height: 60px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.work:hover .material-icons{
+    visibility: visible;
+}
+.material-icons {
+    visibility: hidden;
+    color: white;
+    cursor: pointer;
+    margin-left: 80%;
+
+}
+.material-icons.md-48 { font-size: 50px; }
+
+.btn{
+    margin-right: 40px;
+    margin-left: 70px;
+}
+.btn-input{
+    margin-top: 40px; 
+}
+
+.btn-input > button{
+    background-color: rgb(135, 111, 192);
+    border-radius: 3px;
+    color: white;
+    width: 30%;
+    height: 50px;  
+    margin-top: 10px;
+}
+
+.text-input{
+    width: 90%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #0b2a47;
+}
+
+
